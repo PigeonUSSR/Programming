@@ -1,3 +1,4 @@
+# Programming
 /******************************
 * Автор: Прохоров В.В.        *
 * Задание: Линейные алгоритмы *
@@ -9,10 +10,8 @@
 using namespace std;
 
 int main() {
-
-	double rad0, rad1, rad2, alfa, len, Q1, Q2, Q3;
-	double vis, P;
-	const double pi = 3.14;;
+	const double pi = 3.14;
+	double rad0, rad1, rad2, alfa, len, Q1, Q2, Q3, vis, P;
 	vis = 2.4 * pow(10, -4);
 	P = 0.721 * pow(10, 4);
 
@@ -35,6 +34,4 @@ int main() {
 	Q3 = ((pow( alfa, 4) * sqrt(3) ) / 320) * ( P / ( len * vis ));
 
 	cout << "The fluid flow rate for the pipe with a circular cross-section = " << Q1 << endl << "The fluid flow rate for the pipe with a inner and outer radius = " << Q2 << endl << "The fluid flow rate for the pipe with a triangular cross-section = " << Q3 << endl;
-
-	cout << "Press any botton to close window";
 }
